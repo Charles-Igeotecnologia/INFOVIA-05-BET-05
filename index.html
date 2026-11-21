@@ -1029,7 +1029,7 @@ footer{padding:56px 0 40px;color:var(--text-2);font-size:13.5px}
     <div><span class="lab">Projeto</span><b>INFOVIA 05 · BET 04</b>Instituto de Tecnologia e Inovação<br>Biblioteca de Dados Compartilhados · índice do repositório <span class="mono">05_COMPARTILHAMENTO</span></div>
     <div><span class="lab">Responsável técnico</span><b>GEÓGRAFO. Charles Silva de Araujo</b>Esp. Geoprocessamento, Esp. Georreferenciamento de Imóveis, Esp. E. Ambiental<br>CREA - 19430 AM/RN – 041143770-4</div>
   </div>
-  <div class="legal"><span>R05 · situação em <span id="ger"></span></span><span>Links exigem acesso ao drive compartilhado 05 EVEREST INFOVIA</span><span>Mapa: Esri World Imagery · CARTO · base INFOVIA05 R02</span></div>
+  <div class="legal"><span>R06 · situação em <span id="ger"></span></span><span>Links exigem acesso ao drive compartilhado 05 EVEREST INFOVIA</span><span>Mapa: Esri World Imagery · Esri Dark Gray Canvas · base INFOVIA05 R02</span></div>
 </div></footer>
 
 <script>/* @preserve
@@ -1101,8 +1101,8 @@ $('#sF').textContent=nf(D.total);$('#sL').textContent=D.camadas.length;$('#nA').
     else{$('#basemsg').textContent='A imagem de satélite não carregou neste visualizador. Abra o arquivo direto no navegador (Chrome, Edge, Firefox) para ver o fundo Imagem.';$('#basemsg').classList.add('on');}}});
   const refL=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,opacity:.8});
   const B={img:L.layerGroup([imgL,refL]),
-           dark:L.layerGroup([L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',attribution:'© OpenStreetMap · © CARTO'}),
-                              L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',pane:'shadowPane'})]),
+           dark:L.layerGroup([L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,attribution:'Base cartográfica © Esri, HERE, Garmin, OpenStreetMap'}),
+                              L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,pane:'shadowPane'})]),
            none:L.layerGroup([])};
   let cur=B.img.addTo(map);
   $('#base').onclick=e=>{const b=e.target.closest('button');if(!b||B[b.dataset.b]===cur)return;map.removeLayer(cur);cur=B[b.dataset.b].addTo(map);
