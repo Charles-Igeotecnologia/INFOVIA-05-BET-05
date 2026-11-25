@@ -4,8 +4,9 @@
 
 - Mapa de abertura com o traçado (203,4 km), AID de 250 m, trechos MND, comunidades, marcos de km e unidades de conservação; fundos Imagem (Esri World Imagery), Cartográfico (Esri Dark Gray Canvas) e Sem fundo.
 - Mapas em abas: temáticos ambientais, localização e faixas, série A4 ADA/AID, cartas-imagem A0, perfis lineares, pranchas A1 e as 62 plantas de travessia em MND.
+- Botão "Baixar tudo": acervo completo em 2 partes ZIP organizadas por categoria, e um ZIP por categoria.
 - Acervo com busca e filtros; camadas da biblioteca com download em SHP (ZIP) e KML.
 
-Página única (`index.html`), revisão R08 de 21/11/2026. Os links abrem os arquivos no Google Drive e exigem acesso ao drive compartilhado do projeto.
+Página única (`index.html`), revisão R09 de 25/11/2026. Os links abrem os arquivos no Google Drive e exigem acesso ao drive compartilhado do projeto.
 
 Responsável técnico: GEÓGRAFO. Charles Silva de Araujo — Esp. Geoprocessamento, Esp. Georreferenciamento de Imóveis, Esp. E. Ambiental — CREA - 19430 AM/RN – 041143770-4
